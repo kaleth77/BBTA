@@ -1,0 +1,351 @@
+
+css 
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'EB Garamond', serif;
+}
+
+body {
+  background: url("img/Floral_Bkg_51_E_Monochrome.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Capa oscura con blur */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(23, 61, 46, 0.9);
+  z-index: 0;
+  backdrop-filter: brightness(50%) blur(1px);
+}
+
+.login-container {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  padding: 60px 40px;
+  border: 1px solid #ffffff;
+  background-color: rgba(23, 61, 46, 0.7);
+}
+
+/* Animación del cuadro */
+.login-box {
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.login-box.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-active .login-box {
+  opacity: 0;
+  transform: scale(0.98);
+}
+
+.login-box h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #d9d9d9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #d9d9d9;
+}
+
+input {
+  padding: 8px 5px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #a6b4a9;
+  color: #173D2E;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Enlace blanco con efecto elegante */
+.link-white {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  text-decoration: none;
+  color: #ffffff;
+  font-style: italic;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.link-white::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.link-white:hover {
+  color: #a6b4a9;
+}
+
+.link-white:hover::after {
+  width: 60%;
+}
+
+/* Pantalla de fade suave */
+.fade-screen {
+  position: fixed;
+  inset: 0;
+  background-color: #173D2E;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity 0.6s ease;
+}
+
+.fade-screen--active {
+  opacity: 1;
+  pointer-events: all;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'EB Garamond', serif;
+  background-color: #f3e6d3;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  transition: all 1.2s ease;
+}
+
+.category {
+  flex: 1;
+  position: relative;
+  background-color: #f3e6d3;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1.2s ease;
+}
+
+.category::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/fondo.png');
+  background-size: 400% 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 0;
+}
+
+.category.tequila::before { background-position: 0% 0%; }
+.category.whisky::before { background-position: 33.33% 0%; }
+.category.vino::before { background-position: 66.66% 0%; }
+.category.aguardiente::before { background-position: 100% 0%; }
+
+.category:hover::before {
+  opacity: 1;
+}
+
+.category .text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #222;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.category:hover .text {
+  color: white;
+  top: 88%;
+}
+
+.category h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.category button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-family: inherit;
+  border: 1px solid #222;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.category:hover button {
+  background: white;
+  color: black;
+}
+
+.category .bottle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  max-height: 65%;
+  opacity: 0;
+  transition: all 1.2s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.category:hover .bottle {
+  opacity: 1;
+}
+
+.category.fade-out {
+  opacity: 1;
+  filter: blur(1px);
+  transition: filter 1.2s ease;
+}
+
+/* Animaciones de expansión */
+.category.expand-slide,
+.category.expand-slide-center,
+.category.expand-slide-left {
+  flex: none;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 25%;
+  background-color: #f3e6d3;
+  z-index: 10;
+}
+
+/* Tequila (slide desde izquierda) */
+.category.expand-slide {
+  animation: expandSlideRight 1.5s forwards ease-in-out;
+}
+
+/* Whisky y Vino (centro) */
+.category.expand-slide-center {
+  animation: expandCenter 1.5s forwards ease-in-out;
+}
+
+/* Aguardiente (expansión desde derecha hacia la izquierda) */
+.category.expand-slide-left {
+  animation: expandSlideLeft 1.5s forwards ease-in-out;
+}
+
+.slide-tequila { left: 0; }
+.slide-whisky { left: 25%; }
+.slide-vino { left: 50%; }
+.slide-aguardiente { left: 75%; }
+
+@keyframes expandSlideRight {
+  0% { width: 25%; }
+  100% { width: 100%; }
+}
+
+@keyframes expandCenter {
+  0% { width: 25%; }
+  100% {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@keyframes expandSlideLeft {
+  0% {
+    left: 75%;
+    width: 25%;
+  }
+  100% {
+    left: 0;
+    width: 100%;
+  }
+}
+
+/* Contenido expandido */
+.category.expand-slide::before,
+.category.expand-slide-center::before,
+.category.expand-slide-left::before {
+  opacity: 1 !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.category.expand-slide .bottle,
+.category.expand-slide-center .bottle,
+.category.expand-slide-left .bottle {
+  opacity: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.category.expand-slide .text,
+.category.expand-slide-center .text,
+.category.expand-slide-left .text {
+  opacity: 0;
+  transition: all 0.6s ease;
+}

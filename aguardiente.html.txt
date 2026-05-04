@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BBTA</title>
+  <link rel="stylesheet" href="aguardiente.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<a href="user.html" class="icono-usuario">
+  <img src="img/user.png" alt="Usuario">
+</a>
+
+<div class="navegacion-categorias">
+  <a href="tequila.html">TEQUILA</a>
+  <a href="whisky.html">WHISKY</a>
+  <a href="vino.html">VINO</a>
+</div>
+
+<!-- Sección principal -->
+<div class="container">
+  <div class="title">
+    <div class="linea">AGUA</div>
+    <div class="linea">RDIENTE</div>
+  </div>
+  <img src="img/aguardiente.png" alt="Botella de Aguardiente" class="bottle">
+</div>
+
+<!-- Desvanecido con patrón -->
+<div class="fade-section"></div>
+
+<!-- Sección POPULARES -->
+<div class="populares-section">
+  <h2 class="populares-title" data-aos="fade-up">POPULARES</h2>
+  <div class="botellas-container">
+    <img src="img/botella 13.png" alt="Botella 13" class="botella" data-aos="fade-up" data-aos-delay="100">
+    <img src="img/botella 14.png" alt="Botella 14" class="botella" data-aos="fade-up" data-aos-delay="200">
+    <img src="img/botella 15.png" alt="Botella 15" class="botella" data-aos="fade-up" data-aos-delay="300">
+    <img src="img/botella 16.png" alt="Botella 16" class="botella" data-aos="fade-up" data-aos-delay="400">
+  </div>
+</div>
+
+<!-- Logo BBTA -->
+<div class="logo-section">
+  <img src="img/logo.png" alt="Logo BBTA" class="logo-bbta">
+</div>
+
+<!-- Sección de cuadros -->
+<div class="cuadros-section">
+  <div class="fila">
+    <div class="cuadro">
+      <img src="img/B31.png" class="imagen-botella">
+      <div class="info-botella">
+        <h4>Aguardiente Antioqueño Verde</h4>
+        <p>$53.000</p>
+        <p>1000 ml</p>
+      </div>
+      <a href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20la%20botella%20Aguardiente%20Antioqueño%20Verde%20de%201000ml.%20Por%20favor,%20indícame%20tu%20nombre%20y%20dirección.%20¡Gracias!%20🍾" target="_blank">
+        <div class="boton-verde">
+          <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
+        </div>
+      </a>
+    </div>
+
+    <div class="cuadro">
+      <img src="img/B32.png" class="imagen-botella">
+      <div class="info-botella">
+        <h4>Aguardiente Antioqueño Azul</h4>
+        <p>$58.000</p>
+        <p>1000 ml</p>
+      </div>
+      <a href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20la%20botella%20Aguardiente%20Antioqueño%20Azul%20de%201000ml.%20Por%20favor,%20indícame%20tu%20nombre%20y%20dirección.%20¡Gracias!%20🍾" target="_blank">
+        <div class="boton-verde">
+          <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
+        </div>
+      </a>
+    </div>
+
+    <div class="cuadro">
+      <img src="img/B33.png" class="imagen-botella">
+      <div class="info-botella">
+        <h4>Aguardiente Antioqueño Rojo</h4>
+        <p>$46.000</p>
+        <p>1000 ml</p>
+      </div>
+      <a href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20la%20botella%20Aguardiente%20Antioqueño%20Rojo%20de%201000ml.%20Por%20favor,%20indícame%20tu%20nombre%20y%20dirección.%20¡Gracias!%20🍾" target="_blank">
+        <div class="boton-verde">
+          <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="fila">
+    <div class="cuadro">
+      <img src="img/B34.png" class="imagen-botella">
+      <div class="info-botella">
+        <h4>Aguardiente Antioqueño Amarillo</h4>
+        <p>$57.000</p>
+        <p>1000 ml</p>
+      </div>
+      <a href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20la%20botella%20Aguardiente%20Antioqueño%20Amarillo%20de%201000ml.%20Por%20favor,%20indícame%20tu%20nombre%20y%20dirección.%20¡Gracias!%20🍾" target="_blank">
+        <div class="boton-verde">
+          <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
+        </div>
+      </a>
+    </div>
+
+    <div class="cuadro">
+      <img src="img/B35.png" class="imagen-botella">
+      <div class="info-botella">
+        <h4>Aguardiente Antioqueño Real Amarillo</h4>
+        <p>$78.000</p>
+        <p>1000 ml</p>
+      </div>
+      <a href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20la%20botella%20Aguardiente%20Antioqueño%20Real%20Amarillo%20de%201000ml.%20Por%20favor,%20indícame%20tu%20nombre%20y%20dirección.%20¡Gracias!%20🍾" target="_blank">
+        <div class="boton-verde">
+          <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
+        </div>
+      </a>
+    </div>
+
+    <div class="cuadro">
+      <img src="img/B36.png" class="imagen-botella">
+      <div class="info-botella">
+        <h4>Aguardiente Antioqueño Real</h4>
+        <p>$78.000</p>
+        <p>1000 ml</p>
+      </div>
+      <a href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20la%20botella%20Aguardiente%20Antioqueño%20Real%20de%201000ml.%20Por%20favor,%20indícame%20tu%20nombre%20y%20dirección.%20¡Gracias!%20🍾" target="_blank">
+        <div class="boton-verde">
+          <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

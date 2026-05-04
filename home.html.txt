@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>BBTA</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="category tequila" data-name="tequila">
+      <img src="img/tequila.png" alt="Tequila" class="bottle">
+      <div class="text">
+        <h2>01<br>TEQUILA</h2>
+        <button data-target="tequila.html">VER MÁS</button>
+      </div>
+    </div>
+    <div class="category whisky" data-name="whisky">
+      <img src="img/whisky.png" alt="Whisky" class="bottle">
+      <div class="text">
+        <h2>02<br>WHISKYS</h2>
+        <button data-target="whisky.html">VER MÁS</button>
+      </div>
+    </div>
+    <div class="category vino" data-name="vino">
+      <img src="img/vino.png" alt="Vino" class="bottle">
+      <div class="text">
+        <h2>03<br>VINO</h2>
+        <button data-target="vino.html">VER MÁS</button>
+      </div>
+    </div>
+    <div class="category aguardiente" data-name="aguardiente">
+      <img src="img/aguardiente.png" alt="Aguardiente" class="bottle">
+      <div class="text">
+        <h2>04<br>AGUARDIENTE</h2>
+        <button data-target="aguardiente.html">VER MÁS</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.category button');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', e => {
+        const selected = e.target.closest('.category');
+        const name = selected.dataset.name;
+
+        if (name === 'whisky' || name === 'vino') {
+          selected.classList.add('expand-slide-center', 'slide-' + name);
+        } else if (name === 'aguardiente') {
+          selected.classList.add('expand-slide-left', 'slide-' + name);
+        } else {
+          selected.classList.add('expand-slide', 'slide-' + name);
+        }
+
+        document.querySelectorAll('.category').forEach(other => {
+          if (other !== selected) {
+            other.classList.add('fade-out');
+          }
+        });
+
+        setTimeout(() => {
+          window.location.href = button.dataset.target;
+        }, 1500);
+      });
+    });
+  </script>
+</body>
+</html>

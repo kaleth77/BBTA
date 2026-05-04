@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBTA</title>
+  <link rel="stylesheet" href="user.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div class="user-container">
+    <div class="user-icon">
+      <img src="img/vectoruser.png" alt="Icono de usuario">
+      <p>User</p>
+    </div>
+
+    <div class="contenido-user">
+      <h2>DATOS PERSONALES</h2>
+      <p>Modifica la información de tu perfil:</p>
+      <form action="index.html" method="GET">
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Apellidos" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <button type="submit">ACTUALIZAR DATOS</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

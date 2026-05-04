@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BBTA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="fade-screen"></div>
+  <div class="overlay"></div>
+  <div class="login-container">
+    <div class="login-box">
+      <h1>SIGN UP</h1>
+      <p class="subtitle">WELCOME TO BBTA</p>
+
+      <form>
+        <div style="display: flex; gap: 10px;">
+          <input type="text" placeholder="Nombre" />
+          <input type="text" placeholder="Apellido" />
+        </div>
+        <input type="password" placeholder="Contraseña" />
+
+        <button type="button" onclick="fadeOutAndRedirect('index.html')">Sign up</button>
+      </form>
+
+      <a href="#" class="link-white" onclick="event.preventDefault(); fadeOutAndRedirect('index.html')">Ya tengo una cuenta</a>
+    </div>
+  </div>
+
+  <script>
+    function fadeOutAndRedirect(target) {
+      document.body.classList.add("fade-active");
+      const fadeScreen = document.querySelector(".fade-screen");
+      fadeScreen.classList.add("fade-screen--active");
+
+      setTimeout(() => {
+        window.location.href = target;
+      }, 600);
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const box = document.querySelector(".login-box");
+      setTimeout(() => {
+        box.classList.add("show");
+      }, 100);
+    });
+  </script>
+</body>
+</html>

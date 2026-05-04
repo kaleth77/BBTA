@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('img/fondo user.png') no-repeat center center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #235438;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.user-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 5%;
+  color: white;
+  gap: 80px;
+}
+
+.user-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-icon img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.user-icon p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.contenido-user {
+  background-color: rgba(0,0,0,0.3);
+  padding: 60px 50px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+.contenido-user h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.contenido-user p {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.contenido-user form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contenido-user input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.contenido-user input::placeholder {
+  color: #ccc;
+}
+
+.contenido-user button {
+  background: transparent;
+  border: 2px solid white;
+  padding: 12px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.contenido-user button:hover {
+  background: white;
+  color: #235438;
+}
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-container {
+  animation: fadeSlideIn 1.2s ease-out forwards;
+  opacity: 0; /* inicia oculto */
+}

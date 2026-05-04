@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BBTA - Inicio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+      overflow: hidden;
+    }
+
+    .background-layer {
+      position: fixed;
+      inset: 0;
+      background: url("img/Floral_Bkg_51_E_Monochrome.jpg") no-repeat center center fixed;
+      background-size: cover;
+      opacity: 0;
+      transition: opacity 1.8s ease;
+      z-index: 0;
+    }
+
+    .background-layer.show {
+      opacity: 1;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(23, 61, 46, 0.88);
+      backdrop-filter: brightness(50%) blur(2px);
+      z-index: 1;
+    }
+
+    .green-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #173D2E;
+      z-index: 1000;
+      opacity: 1;
+      transition: opacity 1s ease;
+    }
+
+    .green-screen.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .fade-screen {
+      position: fixed;
+      inset: 0;
+      background-color: #173D2E;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 999;
+      transition: opacity 0.6s ease;
+    }
+
+    .fade-screen--active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .entry-screen {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 40px 20px;
+      opacity: 0;
+      transition: opacity 1.2s ease;
+    }
+
+    .entry-screen.show {
+      opacity: 1;
+    }
+
+    .content {
+      z-index: 3;
+      max-width: 440px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+    }
+
+    .logo {
+      width: 200px;
+      margin-bottom: 30px; /* Espaciado aumentado */
+    }
+
+    .slogan {
+      font-size: 17px;
+      font-weight: 400;
+      margin-bottom: 40px; /* Más espacio debajo del texto */
+      line-height: 1.4;
+    }
+
+    .entry-button {
+      padding: 10px 24px;
+      border: none;
+      border-radius: 30px;
+      background-color: #ffffff;
+      color: #173D2E;
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      margin-bottom: 35px; /* Más espacio con el texto legal */
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .entry-button:hover {
+      transform: scale(1.05);
+      background-color: #e4e4e4;
+      box-shadow: 0 0 10px #ffffff88;
+    }
+
+    .legal {
+      font-size: 12px;
+      color: #d0d0d0;
+      line-height: 1.7;
+      max-width: 360px;
+    }
+
+    .legal a {
+      color: #d0d0d0;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Fondo floral animado -->
+  <div class="background-layer" id="backgroundLayer"></div>
+
+  <!-- Capa oscura -->
+  <div class="overlay"></div>
+
+  <!-- Pantalla verde -->
+  <div class="green-screen" id="greenScreen"></div>
+
+  <!-- Pantalla de transición -->
+  <div class="fade-screen"></div>
+
+  <!-- Contenido principal -->
+  <div class="entry-screen" id="entryScreen">
+    <div class="content">
+      <img src="img/Capa_2.png" alt="BBTA Logo" class="logo" />
+      <div class="slogan">
+        SERVICIO A DOMICILIO:<br>
+        FÁCIL, RÁPIDO Y SEGURO
+      </div>
+      <button class="entry-button" onclick="fadeOutAndRedirect('signup.html')">
+        SOY MAYOR DE EDAD
+      </button>
+      <p class="legal">
+        Haz clic si eres mayor de edad. Al ingresar autorizas el tratamiento de datos personales y
+        <a href="#">los términos y condiciones</a>.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const greenScreen = document.getElementById("greenScreen");
+      const entry = document.getElementById("entryScreen");
+      const background = document.getElementById("backgroundLayer");
+
+      setTimeout(() => {
+        greenScreen.classList.add("fade-out");
+        background.classList.add("show");
+        entry.classList.add("show");
+      }, 800);
+    });
+
+    function fadeOutAndRedirect(target) {
+      const fadeScreen = document.querySelector(".fade-screen");
+      fadeScreen.classList.add("fade-screen--active");
+      setTimeout(() => {
+        window.location.href = target;
+      }, 600);
+    }
+  </script>
+</body>
+</html>
