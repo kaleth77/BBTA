@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BBTA</title>
   <link rel="stylesheet" href="vino.css">
+  <link rel="stylesheet" href="cart.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
@@ -15,7 +16,7 @@
 </a>
 
 <div class="navegacion-categorias">
-      <a href="tequila.html">TEQUILA</a>
+  <a href="tequila.html">TEQUILA</a>
   <a href="whisky.html">WHISKY</a>
   <a href="aguardiente.html">AGUARDIENTE</a>
 </div>
@@ -23,7 +24,7 @@
 <!-- Sección principal -->
 <div class="container">
   <div class="title">VINO</div>
-  <img src="img/vino.png" alt="Botella de Tequila" class="bottle">
+  <img src="img/vino.png" alt="Botella de Vino" class="bottle">
 </div>
 
 <!-- Desvanecido con patrón -->
@@ -57,9 +58,9 @@
         <p>$130.000</p>
         <p>750ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋%2C%20estoy%20interesado%20en%20comprar%20una%20botella.%20Por%20favor%2C%20indícame%20tu%20nombre%2C%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍂%0ANombre%3A%20Andre%20Rose" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Andre Rose', '$130.000', 'img/B21.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
 
     <div class="cuadro">
@@ -69,9 +70,9 @@
         <p>$100.000</p>
         <p>750ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋%2C%20estoy%20interesado%20en%20comprar%20una%20botella.%20Por%20favor%2C%20indícame%20tu%20nombre%2C%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍂%0ANombre%3A%20Andre%20Espumoso" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Andre Espumoso', '$100.000', 'img/B22.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
 
     <div class="cuadro">
@@ -81,9 +82,9 @@
         <p>$230.000</p>
         <p>750ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋%2C%20estoy%20interesado%20en%20comprar%20una%20botella.%20Por%20favor%2C%20indícame%20tu%20nombre%2C%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍂%0ANombre%3A%20Cabernet%20Sauvignon" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Cabernet Sauvignon (B23)', '$230.000', 'img/B23.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
 
     <div class="cuadro">
@@ -93,9 +94,9 @@
         <p>$230.000</p>
         <p>750ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋%2C%20estoy%20interesado%20en%20comprar%20una%20botella.%20Por%20favor%2C%20indícame%20tu%20nombre%2C%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍂%0ANombre%3A%20Cabernet%20Sauvignon" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Cabernet Sauvignon (B24)', '$230.000', 'img/B24.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
   </div>
 
@@ -108,9 +109,9 @@
         <p>$350.000</p>
         <p>750ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋%2C%20estoy%20interesado%20en%20comprar%20una%20botella.%20Por%20favor%2C%20indícame%20tu%20nombre%2C%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍂%0ANombre%3A%20Airen" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Airen', '$350.000', 'img/B25.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
 
     <div class="cuadro">
@@ -120,9 +121,9 @@
         <p>$170.000</p>
         <p>750ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋%2C%20estoy%20interesado%20en%20comprar%20una%20botella.%20Por%20favor%2C%20indícame%20tu%20nombre%2C%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍂%0ANombre%3A%20Chardonay" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Chardonay', '$170.000', 'img/B26.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
 
     <div class="cuadro">
@@ -132,9 +133,9 @@
         <p>$1.350.000</p>
         <p>750ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋%2C%20estoy%20interesado%20en%20comprar%20una%20botella.%20Por%20favor%2C%20indícame%20tu%20nombre%2C%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍂%0ANombre%3A%20Lambrusco" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Lambrusco', '$1.350.000', 'img/B27.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
 
     <div class="cuadro">
@@ -144,9 +145,9 @@
         <p>$1.100.000</p>
         <p>750ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋%2C%20estoy%20interesado%20en%20comprar%20una%20botella.%20Por%20favor%2C%20indícame%20tu%20nombre%2C%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍂%0ANombre%3A%20Merlot" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Merlot', '$1.100.000', 'img/B28.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
   </div>
 
@@ -159,9 +160,9 @@
         <p>$340.000</p>
         <p>750ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋%2C%20estoy%20interesado%20en%20comprar%20una%20botella.%20Por%20favor%2C%20indícame%20tu%20nombre%2C%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍂%0ANombre%3A%20Tempranillo" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Tempranillo', '$340.000', 'img/B29.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
 
     <div class="cuadro-grande">
@@ -171,19 +172,20 @@
         <p>$270.000</p>
         <p>750ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋%2C%20estoy%20interesado%20en%20comprar%20una%20botella.%20Por%20favor%2C%20indícame%20tu%20nombre%2C%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍂%0ANombre%3A%20Cariñoso" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Cariñoso', '$270.000', 'img/B30.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
   </div>
 
 </div>
-
 
 <!-- AOS Animation JS -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
+<script src="cart.js"></script>
+
 </body>
 </html>
