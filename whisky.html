@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BBTA</title>
   <link rel="stylesheet" href="whisky.css">
+  <link rel="stylesheet" href="cart.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
@@ -23,7 +24,7 @@
 <!-- Sección principal -->
 <div class="container">
   <div class="title">WHISKY</div>
-  <img src="img/whisky.png" alt="Botella de Tequila" class="bottle">
+  <img src="img/whisky.png" alt="Botella de Whisky" class="bottle">
 </div>
 
 <!-- Desvanecido con patrón -->
@@ -55,9 +56,9 @@
         <p>$78.000</p>
         <p>1000ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20una%20botella%20Black%20%26%20White.%20Por%20favor,%20indícame%20tu%20nombre,%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍾" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Black &amp; White', '$78.000', 'img/B11.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro">
       <img src="img/B12.png" class="imagen-botella">
@@ -66,9 +67,9 @@
         <p>$95.000</p>
         <p>1000ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20una%20botella%20Red%20Label.%20Por%20favor,%20indícame%20tu%20nombre,%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍾" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Red Label', '$95.000', 'img/B12.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro">
       <img src="img/B13.png" class="imagen-botella">
@@ -77,9 +78,9 @@
         <p>$275.000</p>
         <p>1000ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20una%20botella%20Black%20Label.%20Por%20favor,%20indícame%20tu%20nombre,%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍾" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Black Label', '$275.000', 'img/B13.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro">
       <img src="img/B14.png" class="imagen-botella">
@@ -88,9 +89,9 @@
         <p>$478.000</p>
         <p>1000ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20una%20botella%20Green%20Label.%20Por%20favor,%20indícame%20tu%20nombre,%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍾" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Green Label', '$478.000', 'img/B14.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
   </div>
 
@@ -102,42 +103,42 @@
         <p>$220.000</p>
         <p>1000ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20una%20botella%20Gold%20Label.%20Por%20favor,%20indícame%20tu%20nombre,%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍾" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Gold Label', '$220.000', 'img/B15.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro">
       <img src="img/B16.png" class="imagen-botella">
       <div class="info-botella">
-        <h4>Old parr 12 años</h4>
+        <h4>Old Parr 12 años</h4>
         <p>$190.000</p>
         <p>1000ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20una%20botella%20Old%20Parr%2012%20Años.%20Por%20favor,%20indícame%20tu%20nombre,%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍾" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Old Parr 12 años', '$190.000', 'img/B16.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro">
       <img src="img/B17.png" class="imagen-botella">
       <div class="info-botella">
-        <h4>Buchanan’s Delux</h4>
+        <h4>Buchanan's Delux</h4>
         <p>$190.000</p>
         <p>1000ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20una%20botella%20Old%20Parr%2012%20Años.%20Por%20favor,%20indícame%20tu%20nombre,%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍾" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Buchanan\'s Delux', '$190.000', 'img/B17.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro">
       <img src="img/B18.png" class="imagen-botella">
       <div class="info-botella">
-        <h4>Buchanan’s 18 año</h4>
+        <h4>Buchanan's 18 años</h4>
         <p>$1.240.000</p>
         <p>1000ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20una%20botella%20Old%20Parr%2012%20Años.%20Por%20favor,%20indícame%20tu%20nombre,%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍾" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Buchanan\'s 18 años', '$1.240.000', 'img/B18.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
   </div>
 
@@ -145,31 +146,34 @@
     <div class="cuadro-grande">
       <img src="img/B19.png" class="imagen-botella">
       <div class="info-botella">
-        <h4>Buchanan’s two soul</h4>
+        <h4>Buchanan's Two Soul</h4>
         <p>$240.000</p>
         <p>1000ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20una%20botella%20Old%20Parr%2012%20Años.%20Por%20favor,%20indícame%20tu%20nombre,%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍾" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Buchanan\'s Two Soul', '$240.000', 'img/B19.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro-grande">
       <img src="img/B20.png" class="imagen-botella">
       <div class="info-botella">
-        <h4>Blue label</h4>
+        <h4>Blue Label</h4>
         <p>$1.200.000</p>
         <p>1000ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20una%20botella%20Old%20Parr%2012%20Años.%20Por%20favor,%20indícame%20tu%20nombre,%20dirección%20y%20el%20nombre%20de%20la%20botella%20que%20deseas.%20¡Gracias!%20🍾" target="_blank">
-        <img src="img/Vector.png" alt="Ver más" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Blue Label', '$1.200.000', 'img/B20.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
   </div>
 </div>
-
 
 <!-- AOS Animation JS -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
+<script src="cart.js"></script>
+
+</body>
+</html>
