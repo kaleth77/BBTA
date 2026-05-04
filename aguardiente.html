@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BBTA</title>
   <link rel="stylesheet" href="aguardiente.css">
+  <link rel="stylesheet" href="cart.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
@@ -58,11 +59,9 @@
         <p>$53.000</p>
         <p>1000 ml</p>
       </div>
-      <a href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20la%20botella%20Aguardiente%20Antioqueño%20Verde%20de%201000ml.%20Por%20favor,%20indícame%20tu%20nombre%20y%20dirección.%20¡Gracias!%20🍾" target="_blank">
-        <div class="boton-verde">
-          <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-        </div>
-      </a>
+      <div class="boton-verde" onclick="addToCart('Aguardiente Antioqueño Verde', '$53.000', 'img/B31.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
 
     <div class="cuadro">
@@ -72,11 +71,9 @@
         <p>$58.000</p>
         <p>1000 ml</p>
       </div>
-      <a href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20la%20botella%20Aguardiente%20Antioqueño%20Azul%20de%201000ml.%20Por%20favor,%20indícame%20tu%20nombre%20y%20dirección.%20¡Gracias!%20🍾" target="_blank">
-        <div class="boton-verde">
-          <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-        </div>
-      </a>
+      <div class="boton-verde" onclick="addToCart('Aguardiente Antioqueño Azul', '$58.000', 'img/B32.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
 
     <div class="cuadro">
@@ -86,11 +83,9 @@
         <p>$46.000</p>
         <p>1000 ml</p>
       </div>
-      <a href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20la%20botella%20Aguardiente%20Antioqueño%20Rojo%20de%201000ml.%20Por%20favor,%20indícame%20tu%20nombre%20y%20dirección.%20¡Gracias!%20🍾" target="_blank">
-        <div class="boton-verde">
-          <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-        </div>
-      </a>
+      <div class="boton-verde" onclick="addToCart('Aguardiente Antioqueño Rojo', '$46.000', 'img/B33.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
   </div>
 
@@ -102,11 +97,9 @@
         <p>$57.000</p>
         <p>1000 ml</p>
       </div>
-      <a href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20la%20botella%20Aguardiente%20Antioqueño%20Amarillo%20de%201000ml.%20Por%20favor,%20indícame%20tu%20nombre%20y%20dirección.%20¡Gracias!%20🍾" target="_blank">
-        <div class="boton-verde">
-          <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-        </div>
-      </a>
+      <div class="boton-verde" onclick="addToCart('Aguardiente Antioqueño Amarillo', '$57.000', 'img/B34.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
 
     <div class="cuadro">
@@ -116,11 +109,9 @@
         <p>$78.000</p>
         <p>1000 ml</p>
       </div>
-      <a href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20la%20botella%20Aguardiente%20Antioqueño%20Real%20Amarillo%20de%201000ml.%20Por%20favor,%20indícame%20tu%20nombre%20y%20dirección.%20¡Gracias!%20🍾" target="_blank">
-        <div class="boton-verde">
-          <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-        </div>
-      </a>
+      <div class="boton-verde" onclick="addToCart('Aguardiente Antioqueño Real Amarillo', '$78.000', 'img/B35.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
 
     <div class="cuadro">
@@ -130,11 +121,9 @@
         <p>$78.000</p>
         <p>1000 ml</p>
       </div>
-      <a href="https://wa.me/573017690344?text=Hola%20👋,%20estoy%20interesado%20en%20comprar%20la%20botella%20Aguardiente%20Antioqueño%20Real%20de%201000ml.%20Por%20favor,%20indícame%20tu%20nombre%20y%20dirección.%20¡Gracias!%20🍾" target="_blank">
-        <div class="boton-verde">
-          <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-        </div>
-      </a>
+      <div class="boton-verde" onclick="addToCart('Aguardiente Antioqueño Real', '$78.000', 'img/B36.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
   </div>
 </div>
@@ -144,6 +133,7 @@
 <script>
   AOS.init();
 </script>
+<script src="cart.js"></script>
 
 </body>
 </html>
