@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BBTA</title>
   <link rel="stylesheet" href="tequila.css">
+  <link rel="stylesheet" href="cart.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
@@ -14,13 +15,11 @@
   <img src="img/user.png" alt="Usuario">
 </a>
 
-
   <div class="navegacion-categorias">
   <a href="whisky.html">WHISKY</a>
   <a href="vino.html">VINO</a>
   <a href="aguardiente.html">AGUARDIENTE</a>
 </div>
-
 
   <!-- Sección principal -->
   <div class="container">
@@ -57,9 +56,9 @@
         <p>$130.000</p>
         <p>1000 ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola,%20quiero%20comprar%20la%20botella%20Cofradia%20de%201000ml.%20Por%20fa,%20dime%20tu%20nombre%20completo,%20dirección%20de%20envío%20y%20el%20nombre%20de%20la%20botella.%20Gracias%20🔥" target="_blank">
-        <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Cofradia', '$130.000', 'img/B1.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro">
       <img src="img/B2.png" class="imagen-botella">
@@ -68,9 +67,9 @@
         <p>$100.000</p>
         <p>1000 ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola,%20quiero%20comprar%20la%20botella%20Jose%20Cuervo%20de%201000ml.%20Por%20fa,%20dime%20tu%20nombre%20completo,%20dirección%20de%20envío%20y%20el%20nombre%20de%20la%20botella.%20Gracias%20🔥" target="_blank">
-        <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Jose Cuervo', '$100.000', 'img/B2.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro">
       <img src="img/B3.png" class="imagen-botella">
@@ -79,9 +78,9 @@
         <p>$230.000</p>
         <p>1000 ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola,%20quiero%20comprar%20la%20botella%20El%20Patron%20de%201000ml.%20Por%20fa,%20dime%20tu%20nombre%20completo,%20dirección%20de%20envío%20y%20el%20nombre%20de%20la%20botella.%20Gracias%20🔥" target="_blank">
-        <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('El Patrón', '$230.000', 'img/B3.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro">
       <img src="img/B4.png" class="imagen-botella">
@@ -90,9 +89,9 @@
         <p>$250.000</p>
         <p>1000 ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola,%20quiero%20comprar%20la%20botella%20Don%20Julio%20de%201000ml.%20Por%20fa,%20dime%20tu%20nombre%20completo,%20dirección%20de%20envío%20y%20el%20nombre%20de%20la%20botella.%20Gracias%20🔥" target="_blank">
-        <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Don Julio', '$250.000', 'img/B4.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
   </div>
 
@@ -104,9 +103,9 @@
         <p>$350.000</p>
         <p>1000 ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola,%20quiero%20comprar%20la%20botella%20Don%20Julio%20Compuesto%20de%201000ml.%20Por%20fa,%20dime%20tu%20nombre%20completo,%20dirección%20de%20envío%20y%20el%20nombre%20de%20la%20botella.%20Gracias%20🔥" target="_blank">
-        <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('Don Julio Compuesto', '$350.000', 'img/B5.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro">
       <img src="img/B6.png" class="imagen-botella">
@@ -115,9 +114,9 @@
         <p>$170.000</p>
         <p>1000 ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola,%20quiero%20comprar%20la%20botella%20El%20Espolon%20de%201000ml.%20Por%20fa,%20dime%20tu%20nombre%20completo,%20dirección%20de%20envío%20y%20el%20nombre%20de%20la%20botella.%20Gracias%20🔥" target="_blank">
-        <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('El Espolón (B6)', '$170.000', 'img/B6.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro">
       <img src="img/B7.png" class="imagen-botella">
@@ -126,9 +125,9 @@
         <p>$170.000</p>
         <p>1000 ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola,%20quiero%20comprar%20la%20botella%20El%20Espolon%20de%201000ml.%20Por%20fa,%20dime%20tu%20nombre%20completo,%20dirección%20de%20envío%20y%20el%20nombre%20de%20la%20botella.%20Gracias%20🔥" target="_blank">
-        <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('El Espolón (B7)', '$170.000', 'img/B7.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro">
       <img src="img/B8.png" class="imagen-botella">
@@ -137,9 +136,9 @@
         <p>$170.000</p>
         <p>1000 ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola,%20quiero%20comprar%20la%20botella%20El%20Espolon%20de%201000ml.%20Por%20fa,%20dime%20tu%20nombre%20completo,%20dirección%20de%20envío%20y%20el%20nombre%20de%20la%20botella.%20Gracias%20🔥" target="_blank">
-        <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('El Espolón (B8)', '$170.000', 'img/B8.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
   </div>
 
@@ -151,9 +150,9 @@
         <p>$170.000</p>
         <p>1000 ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola,%20quiero%20comprar%20la%20botella%20El%20Espolon%20de%201000ml.%20Por%20fa,%20dime%20tu%20nombre%20completo,%20dirección%20de%20envío%20y%20el%20nombre%20de%20la%20botella.%20Gracias%20🔥" target="_blank">
-        <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('El Espolón (B9)', '$170.000', 'img/B9.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
     <div class="cuadro-grande">
       <img src="img/B10.png" class="imagen-botella">
@@ -162,9 +161,9 @@
         <p>$170.000</p>
         <p>1000 ml</p>
       </div>
-      <a class="boton-verde" href="https://wa.me/573017690344?text=Hola,%20quiero%20comprar%20la%20botella%20El%20Espolon%20de%201000ml.%20Por%20fa,%20dime%20tu%20nombre%20completo,%20dirección%20de%20envío%20y%20el%20nombre%20de%20la%20botella.%20Gracias%20🔥" target="_blank">
-        <img src="img/Vector.png" alt="Comprar" class="icono-vermas">
-      </a>
+      <div class="boton-verde" onclick="addToCart('El Espolón (B10)', '$170.000', 'img/B10.png')">
+        <img src="img/Vector.png" alt="Agregar" class="icono-vermas">
+      </div>
     </div>
   </div>
 </div>
@@ -174,3 +173,7 @@
 <script>
   AOS.init();
 </script>
+<script src="cart.js"></script>
+
+</body>
+</html>
